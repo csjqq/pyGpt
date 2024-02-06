@@ -6,7 +6,7 @@ import telebot
 
 # 从环境变量中读取 OpenAI API 密钥和 Telegram 机器人令牌
 #openai.api_key = os.environ.get('OPENAI_API_KEY', '')
-bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', '6815406354:AAGJwCJBi5IaIaFdEO0asm_J1KzFth_Sjbc')
+bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', '68154xxxxc')
 
 # 设置 OpenAI API 基本 URL
 #openai.api_base = "https://chimeragpt.adventblocks.cc/api/v1"
@@ -32,7 +32,7 @@ def handle_message(message):
     #     ]
     # )
 
-    # 提取 AI 的回复
+    # 提取 AI 的回复aaaa
     # ai_response = response['choices'][0]['message']['content']
 
     # 将 AI 的回复发送回给用户
@@ -40,12 +40,13 @@ def handle_message(message):
     c = json.loads(response)
     print(c)
     print(c['result'])
+    print("test")
     bot.reply_to(message, c['result'])
 
 
 
-API_KEY = "i7aQg3oSQhpCShhyIAeOpLYh"
-SECRET_KEY = "2sdpdrK3tIKBDgILjsCqmRGe2PclzYWn"
+API_KEY = ""
+SECRET_KEY = ""
 
 
 def al(msg):
